@@ -1320,6 +1320,7 @@ p {
     font-weight: bold;
 }
 
+
 .about-btn {
     display: inline-block;
     background: linear-gradient(120deg, #ae6a6b, #953b3b);
@@ -1975,4 +1976,38 @@ section {
     font-size: 1.5rem;
     margin: 3px;
 }
-
+.book-now-link {
+    display: inline-block;
+    background-color:#d2a7a7;
+    color:#9c2527;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .book-now-link:hover {
+    background-color: #89393a;
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    color: #d2a7a7;
+  }
+  
+  .book-now-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: white; /* Underline color */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .book-now-link:hover::after {
+    width: 100%; /* Full width underline on hover */
+    font-weight: 1400;
+  }
+  
